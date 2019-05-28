@@ -23,4 +23,4 @@ def num_unival_trees(tree):
         count = count + 1
     return count + num_unival_trees(tree.left) + num_unival_trees(tree.right)
                           
-print(num_unival_trees(Node(Node(0),Node(1),Node(Node(0),Node(Node(1),Node(1),Node(1)),Node(0)))))
+print(num_unival_trees(Node(0,Node(1),Node(0,Node(1,Node(1),Node(1)),Node(0)))))
